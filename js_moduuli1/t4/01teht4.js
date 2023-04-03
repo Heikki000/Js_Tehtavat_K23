@@ -6,12 +6,16 @@ If you enter Anna as the name, for example, the program prints to the HTML docum
 Use math.random() to draw a value (1, 2, 3 or 4)
 Once the number is drawn, you need to use a multiple choice structure (if, else if, ..., else or switch).
  */
+const name = prompt('Type your name.');
+const num = Math.floor(Math.random()*4)+1
+console.log(num)
 
-if (a < 5) {
-
+if (num == 1){
+  document.querySelector('#target').innerHTML = name + ', you are Gryffindor.';
+} else if (num == 2){
+  document.querySelector('#target').innerHTML = name + ', you are Slytherin.';
+} else if (num == 3){
+  document.querySelector('#target').innerHTML = name + ', you are Hufflepuff.';
+} else if (num == 4){
+  document.querySelector('#target').innerHTML = name + ', you are Ravenclaw.';
 }
-
-
-let silmaluku = Math.random() * 6                //desim luku 0... 5.9999..
-silmaluku = Math.floor(Math.random() * 6)     // kokonaisluku 0-5
-silmaluku = 1 + Math.floor(Math.random() * 6) // kokonaisluku 1-6
