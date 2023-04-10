@@ -15,7 +15,7 @@ for (let i = 0; i < dogs.length; i++) {
   uoList += `<li> ${dogs[i]} </li>`
 }
 
-uoList += `</ol>`
+uoList += `</ul>`
 
 document.querySelector('#target').innerHTML += uoList
 
