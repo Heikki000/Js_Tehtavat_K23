@@ -9,6 +9,6 @@ while (number != 0) {
 
 numbers.sort((a, b) => a-b);
 
-for (let i=numbers.length; i > 0; i-=1){
+for (let i=numbers.length -1; i > 0; i-=1){
   console.log(numbers[i]);
 }
